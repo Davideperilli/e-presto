@@ -1,0 +1,224 @@
+:root{
+    --main:#edab05;
+    --sec:#664900;
+    --accent:#f0dfb6;
+    --blackCus:#1c1e22;
+    --whiteCus:#f5f3ef;
+}
+
+body{
+    background-color: var(--accent);
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3, h4{
+    font-family: 'Fraunces', serif;
+
+}
+
+@font-face {
+    font-family: titoloneBello;
+    src: url("./media/Krifon\ Regular\ \(1\).otf");
+}
+
+h1{
+    font-family: titoloneBello;
+    text-shadow: 2px 2px var(--blackCus);
+    font-size: 12vh;
+}
+
+.text-main{
+    color: var(--main);
+}
+
+.text-sec{
+    color: var(--sec);
+}
+
+.text-accent{
+    color: var(--accent);
+}
+
+.text-blackCus{
+    color: var(--blackCus);
+}
+
+.text-whiteCus{
+    color: var(--whiteCus);
+}
+
+.bg-main{
+    background-color: var(--main);
+}
+
+.bg-sec{
+    background-color: var(--sec);
+}
+
+.bg-accent{
+    background-color: var(--accent);
+}
+
+.bg-blackCus{
+    background-color: var(--blackCus);
+}
+
+.bg-whiteCus{
+    background-color: var(--whiteCus);
+}
+
+.border-main{
+    border: 2px solid var(--main);
+}
+
+.border-sec{
+    border: 2px solid var(--sec);
+}
+
+.border-accent{
+    border: 2px solid var(--accent);
+}
+
+.border-blackCus{
+    border: 2px solid var(--blackCus);
+}
+
+.border-whiteCus{
+    border: 2px solid var(--whiteCus);
+}
+
+/* sezione header */
+#myVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.btnCustom{
+    background-color: var(--accent);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 8px double var(--sec);
+    color: var(--sec);
+    font-size: large;
+    transition: 0.4s;
+}
+
+.btnCustom:hover{
+    background-color: var(--main);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 8px double var(--sec);
+    color: var(--accent);
+    font-size: large;
+}
+
+.btnCustom2{
+    background-color: var(--accent);
+    height: 60px;
+    width: 100px;
+    border-radius: 20px;
+    border: 8px double var(--sec);
+    color: var(--sec);
+    transition: 0.4s;
+}
+
+.btnCustom2:hover{
+    background-color: var(--main);
+    height: 60px;
+    width: 150px;
+    border-radius: 20px;
+    border: 8px double var(--sec);
+    color: var(--accent);
+    font-size: large;
+}
+
+.logoBrown{
+    width: 40px;
+}
+
+#mainNavbar{
+transition: 0.4s;
+}
+#navIcon{
+    transition: 0.4s;
+}
+
+.img-custom{
+    width: 500px;
+}
+@media screen and (max-width: 900px) {
+    .img-custom{
+        width: 300px;
+    }
+}
+
+.increment-numbers{
+    font-size: 50px;
+    color: var(--sec);
+    font-weight: 700px;
+}
+
+/* swiper */
+.swiper {
+    
+    height: 400px;
+  }
+
+  .card-custom-sw{
+    height: 200px;
+    width: 350px;
+    border: 2px solid var(--blackCus);
+    border-radius: 20px;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* sezione enter-leave */
+  .col-custom-trasporti{
+    border: 3px solid var(--sec);
+    color: var(--sec);
+    padding: 20px;
+    transition: 0.4s;
+  }
+
+  .col-custom-trasporti:hover{
+    border: 3px solid var(--sec);
+    color: var(--blackCus);
+    padding: 20px;
+    transform: scale(1.2);
+
+  }
+  
+  /* le mie categorie */
+  .category-card{
+    border: double 10px var(--sec);
+    border-radius: 50px;
+  }
+
+  .border-dashed{
+    border: dashed 4px var(--sec);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    background: url('./media/patternCategorie.jpg');
+    background-size: cover;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

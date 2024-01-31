@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e-presto</title>
+    <link rel="shortcut icon" href="./media/ecommerceFavicon.png" type="image/x-icon">
+
+    <!--SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- css aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- cdn fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:ital,wght@0,100;1,100&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!--     inizio navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid">
+
+            <a class="navbar-brand " href="#" id="logoA">
+                <img class="logoBrown" src="./media/logoGold.png" alt="">
+            </a>
+
+            <a class="navbar-brand d-none" href="#" id="logoB">
+                <img class="logoBrown" src="./media/logoBrown.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-hand-point-up fa-2x text-sec" id="navIcon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Annunci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chi siamo?</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca Prodotti" aria-label="Search">
+                    <button class="btnCustom2" type="submit">Cerca </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--     fine navbar -->
+
+    <!--     inizio header -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <video autoplay muted loop id="myVideo">
+                    <source src="./media/header (1).mp4" type="video/mp4">
+                </video>
+                <div class="row vh-100">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="text-main" data-aos="flip-left">e-presto</h1>
+                        <h2 data-aos="fade-left">prima di subito</h2>
+                        <button class="btnCustom" data-aos="zoom-in">cerca prodotti</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     fine header -->
+
+    <!-- sezione di aos -->
+    <section class="container my-5 py-5">
+        <div class="row">
+            <h2 class="text-center display-2 mb-5">Dicono di noi...</h2>
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right">
+                <img class="img-custom" src="./media/imgWOW.png" alt="woman says wow">
+            </div>
+            <div class="col-12 col-md-6 text-center  justify-content-center">
+                <h2 id="titoloIntersecato" class="fs-1">Un po' di numeri</h2>
+
+                <p class="lead text-sec"> <span id="first-span" class="increment-numbers d-block">0</span> Clienti
+                    Soddisfatti</p>
+                <p class="lead text-sec"> <span id="second-span" class="increment-numbers d-block">0</span> Prodotti
+                    Venduti</p>
+                <p class="lead text-sec"> <span id="third-span" class="increment-numbers d-block">0</span> Recensioni
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- fine sezione di aos -->
+
+    <!--     inizio swiper -->
+    <section class="container my-5 py-5">
+        <div class="row justify-content-center">
+            <h2 class="text-center display-2">Le nostre recensioni!</h2>
+            <div class="col-12">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- andranno tutte le recensioni create in dinamica in basso -->
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     fine swiper -->
+
+    <!-- inizio sezione enter-leave -->
+    <section class="container-fluid my-5 py-5 bg-main ">
+        <div class="container">
+            <div class="row justify-content-between ">
+                <h2 class="text-center display-2 mb-5">I più fast del webbe!</h2>
+                <div class="col-12 col-md-3 col-custom-trasporti mb-4">
+                    <i class="fa-solid fa-truck-monster fa-2x my-2 text-accent"></i>
+                    <h3>Trasporti</h3>
+                    <p>Siamo i più veloci ed affidabili nel trasporto delle nostre mercanzie. Soddisfatti o rimborsati, in caso di mancata consegna e/o rottura del prodotto acquistato. Provare per credere! </p>
+                </div>
+                <div class="col-12 col-md-3 col-custom-trasporti mb-4">
+                    <i class="fa-solid fa-truck-monster fa-2x my-2 text-accent"></i>
+                    <h3>Trasporti</h3>
+                    <p>Siamo i più veloci ed affidabili nel trasporto delle nostre mercanzie. Soddisfatti o rimborsati, in caso di mancata consegna e/o rottura del prodotto acquistato. Provare per credere! </p>   
+                </div>
+                <div class="col-12 col-md-3 col-custom-trasporti mb-4">
+                    <i class="fa-solid fa-truck-monster fa-2x my-2 text-accent"></i>
+                    <h3>Trasporti</h3>
+                    <p>Siamo i più veloci ed affidabili nel trasporto delle nostre mercanzie. Soddisfatti o rimborsati, in caso di mancata consegna e/o rottura del prodotto acquistato. Provare per credere! </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- fine sezione enter-leave -->
+
+   <!-- inizio categorie prodotti -->
+    <section class="container my-5">
+        <div class="row " id="cardsCategoryWrapper">
+            <h2 class="text-center display-2 mb-5">Categorie</h2>
+        </div>
+
+    </section>
+   <!-- fine categorie prodotti -->
+    <div style="height: 1000px;"></div>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- js interno custom -->
+    <script>
+        /* creazione recensioni */
+        let advises = [
+            { name: 'Davide', quote: `ìl sito più bello che abbia mai visto!`, vote: 5 },
+            { name: 'Cristina', quote: `il sito fa schifo e spdiscono lentamente!`, vote: 2 },
+            { name: 'Filippo', quote: `la varietà di prodotti più vasta del globo`, vote: 4 },
+            { name: 'Ravel', quote: `si potrebbe fare di più!`, vote: 1 },
+        ];
+
+        /* cattura swipe wrapper  */
+        let swiperWrapper = document.querySelector('.swiper-wrapper');
+
+        advises.forEach((recensione) => {
+            let div = document.createElement('div');
+            div.classList.add('swiper-slide', 'd-flex', 'align-items-center', 'justify-content-center');
+            div.innerHTML = `
+                <div div class="card-custom-sw" >
+                  <p class="h3">${recensione.name}</p>
+                  <p>${recensione.quote}</p>
+                  
+                  <div class="d-flex mt-2">
+                    ${createStars(recensione.vote)}
+                  </div>
+                </div >
+            `;
+            swiperWrapper.appendChild(div);
+        });
+
+        /* funzione crea stelline nelle card delle recensioni */
+        function createStars(fullStars) {
+            let final = '';
+
+            /* ciclo che crea le stelle piene */
+            for (let i = 0; i < fullStars; i++) {
+                final += `<i class="fa-solid fa-star"></i>`;
+            }
+
+            /* ciclo che ne crea vuote  */
+            for (let i = 0; i < 5 - fullStars; i++) {
+                final += `<i class="fa-regular fa-star"></i>`;
+            }
+            return final;
+        }
+
+        /* inizializzazione swiper */
+        const swiper = new Swiper('.swiper', {
+
+            breakpoints: {
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            },
+           },
+
+            /* autoplay swiper */
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+
+            /* coverflow swiper */
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "1",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+        });
+
+    </script>
+
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- inizializzazione aos -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- js custom -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
